@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Whiteboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Live Whiteboard</h2>
+<canvas id="board"></canvas>
+<input id="chatInput" placeholder="Type a message">
+<button onclick="sendMessage(document.getElementById('chatInput').value)">Send</button>
+<div id="chatLog"></div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
