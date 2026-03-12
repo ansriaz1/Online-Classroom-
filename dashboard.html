@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Dashboard</h1>
+<div id="teacherPanel" style="display:none">
+<h2>Teacher Tools</h2>
+<button onclick="createClass()">Create Class</button>
+<button onclick="startLecture()">Start Lecture</button>
+</div>
+<div id="studentPanel" style="display:none">
+<h2>Student Tools</h2>
+<input id="classCode" placeholder="Class Code">
+<button onclick="joinClass()">Join Class</button>
+<button onclick="askAITutor(prompt('Ask AI Tutor'))">Ask AI Tutor</button>
+</div>
+<script src="app.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+</body>
+  </html>
